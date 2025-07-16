@@ -1,12 +1,9 @@
-# SPDX-FileCopyrightText: (C) 2025 Intel Corporation
-# SPDX-License-Identifier: Apache-2.0
----
 apiVersion: v2
 name: onboarding-manager
 description: Edge Infrastructure Manager Onboarding Manager
 type: application
 version: 1.39.6
-appVersion: "1.37.4"
+appVersion: "1.37.6"
 annotations: {}
 home: edge-orchestrator.intel.com
 maintainers:

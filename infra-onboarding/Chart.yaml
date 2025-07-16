@@ -1,12 +1,9 @@
-# SPDX-FileCopyrightText: (C) 2025 Intel Corporation
-# SPDX-License-Identifier: Apache-2.0
----
 apiVersion: v2
 name: infra-onboarding
 description: Edge Infrastructure Manager Onboarding Umbrella Chart
 type: application
-version: "1.32.10-dev"
-appVersion: "1.32.10-dev"
+version: "1.32.8"
+appVersion: "1.32.8"
 annotations: {}
 home: edge-orchestrator.intel.com
 maintainers:
