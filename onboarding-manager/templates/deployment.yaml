@@ -42,10 +42,12 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           {{- if hasKey $registry "name" }}
           #image: "{{ $registry.name }}{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          image: sandbox-docker-candidates.repo.cci.nokia.net/onboardingmgr:1.37.5
+          #image: sandbox-docker-candidates.repo.cci.nokia.net/onboardingmgr:1.37.5
+          image: sandbox-docker-candidates.repo.cci.nokia.net/onboardingmgr:1.37.6
           {{- else }}
           #image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          image: sandbox-docker-candidates.repo.cci.nokia.net/onboardingmgr:1.37.5
+          #image: sandbox-docker-candidates.repo.cci.nokia.net/onboardingmgr:1.37.5
+          image: sandbox-docker-candidates.repo.cci.nokia.net/onboardingmgr:1.37.6
           {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           {{- if .Values.managerArgs.oamServerAddress }}
